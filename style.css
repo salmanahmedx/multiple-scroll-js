@@ -1,4 +1,6 @@
-*, ::before, ::after {
+*,
+::before,
+::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -12,17 +14,19 @@ body {
     height: 100vh;
     background: #222;
     position: relative;
-    background: url(ressources/background-moutain.png);
+    background: url(resources/background-moutain.png);
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
     overflow: hidden;
 }
-.home-mountains img{
+
+.home-mountains img {
     object-fit: cover;
     object-position: center;
     position: absolute;
 }
+
 h1 {
     font-family: Martel Sans;
     font-weight: 200;
@@ -33,23 +37,27 @@ h1 {
     transform: translateX(-50%);
     z-index: 1;
 }
-h1 span{
+
+h1 span {
     font-size: 40px;
     font-family: Montserrat;
 }
-@media screen and (max-width: 950px){
+
+@media screen and (max-width: 950px) {
     h1 {
         line-height: 1;
         text-align: center;
     }
 }
-.home-mountains img:nth-child(1){
+
+.home-mountains img:nth-child(1) {
     width: 2000px;
     /* height: 1000px; */
     top: 45%;
     left: 0;
     z-index: 2;
 }
+
 /* Content */
 
 .content {
@@ -58,10 +66,12 @@ h1 span{
     max-width: 800px;
     margin: 0 auto;
 }
+
 .content h2 {
     font-size: 50px;
     padding-bottom: 30px;
 }
+
 .content p {
     font-size: 20px;
 }
